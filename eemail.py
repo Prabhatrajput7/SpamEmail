@@ -14,7 +14,7 @@ email.set_content(html.substitute({'name': 'Harry','namee':'Voldemort'}), 'html'
 with smtplib.SMTP(host='smtp.gmail.com', port=587) as smtp:
     smtp.ehlo()
     smtp.starttls()
-    smtp.login('#mail', '#pass') #mail-> your mail id #pass->your password
+    smtp.login('#mail', '#pass') #mail-> your mail id #pass-> your password
     smtp.send_message(email)
     print('All good Boss!')
 
